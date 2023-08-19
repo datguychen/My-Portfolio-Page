@@ -1,0 +1,2 @@
+cd adam-swiderski-page
+yarn start
