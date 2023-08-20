@@ -1,6 +1,6 @@
 # This is a repository for my personal portfolio website, showcasing my skills, projects, and certifications.
 
-# <h1 align="center">My Portfolio Page</h1>
+# My Portfolio Page
 
 This is a repository for my personal portfolio website, showcasing my skills, projects, and certifications. The website is designed to provide an overview of my work and serve as a professional platform to showcase my abilities and experiences.
 
