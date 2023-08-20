@@ -12,6 +12,6 @@ This is a repository for my personal portfolio website, showcasing my skills, pr
 
 
 ## Tutorial
-- First, clone this repository
-- Second, run "yarn start"
-- Third, check my portfolio yourself 😄
+- Clone this repository
+- Run "yarn start"
+- Check my portfolio yourself 😄
