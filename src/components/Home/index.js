@@ -12,7 +12,7 @@ export default function Home() {
         <p
             className="test" data-testid="HomeInfo"
           >
-            This page is for automation testing purposes only. All credits for making this page is to: https://github.com/daniel-jebarson
+            This page is for automation testing purposes only. All credits for making the base of this page direct to: https://github.com/daniel-jebarson.
         </p>
       <h1
         className="head text-5xl font-semibold tracking-[3px] pb-2 " data-testid="HomeWelcome"
@@ -29,10 +29,10 @@ export default function Home() {
         <Typewriter
           options={{
             strings: [
-              "✋I'm Adam Świderski",
-              "I'm an enthusiast QA Engineer",
-              "I have 3 years of experience in QA (and 1 year in automation)",
-              "You can connect with me via LinkedIn",
+              "Hi! ✋I'm Adam Świderski",
+              "I'm an Quality Assurance enthusiast",
+              "I have 3 years of experience in QA (1 year in automation)",
+              "You can connect with me via LinkedIn down below",
             ],
             delay: 150,
             pauseFor: 1500,
