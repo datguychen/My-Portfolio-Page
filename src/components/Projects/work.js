@@ -13,6 +13,7 @@ export default function work({ title, desc, tags, link, code, img }) {
         <div>
           <div className="relative w-full rounded-2xl">
             <img
+              data-testid="ProjectsTileImg"
               src={img}
               alt={title}
               className="w-full h-full max-h-[200px] min-h-[200px] rounded-[10px] object-cover border-[1px] border-secondary"
