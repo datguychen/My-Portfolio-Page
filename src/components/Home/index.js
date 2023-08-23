@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="min-h-screen grid grid-cols-1 gap-7 name content-center text-center">
         <p
-            className="test" data-testid="HomeInfo"
+            className="test" data-testid="HomeInfo" style={{ fontSize: '10px' }}
           >
             This page is for automation testing purposes only. All credits for making the base of this page direct to: https://github.com/daniel-jebarson.
         </p>
@@ -18,7 +18,7 @@ export default function Home() {
         className="head text-5xl font-semibold tracking-[3px] pb-2 " data-testid="HomeWelcome"
         data-aos="zoom-in-up"
       >
-        Welcome
+       🎉 Welcome 🎉
       </h1>
       <div
         className="text-4xl text-yellow-500 pb-16"
@@ -51,7 +51,6 @@ export default function Home() {
       </button>
       <div
         className=" cursor-pointer w-fit left-[62%] absolute bottom-16"
-        data-aos="flip-up"
         data-aos-offset="20"
         data-aos-delay="2000"
       >
