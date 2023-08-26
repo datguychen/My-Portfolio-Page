@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  Portfolio_E2E_Push:
+  Portfolio_E2E_Push_Main:
     timeout-minutes: 20
     runs-on: ubuntu-latest
     steps:
