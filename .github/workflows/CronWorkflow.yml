@@ -1,0 +1,42 @@
+name: Playwright / Sanity / Cron
+
+on:
+  schedule:
+      - cron: '0 */6 * * *'
+      
+
+jobs:
+  Portfolio_E2E_Cron:
+    timeout-minutes: 20
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: main
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: 'npm'
+    
+    - name: Install dependencies
+      env:
+        DEFAULT_BRANCH: main
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      run: npm ci
+    - name: Install Playwright
+      env:
+        DEFAULT_BRANCH: main
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      run: npx playwright install --with-deps chromium
+    - name: Run Playwright - All tests
+      env:
+        DEFAULT_BRANCH: main
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      run: npx playwright test
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: playwright-report
+        path: playwright-report
+        retention-days: 5

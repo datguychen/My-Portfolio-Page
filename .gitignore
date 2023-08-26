@@ -3,3 +3,6 @@
 /yarn.lock
 zzzzkomendy.txt
 .vercel
+/test-results/
+/playwright-report/
+/playwright/.cache/
