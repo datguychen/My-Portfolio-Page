@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <div className="min-h-screen grid grid-cols-1 gap-7 name content-center text-center">
         <p
-            className="test" data-testid="HomeInfo" style={{ fontSize: '10px' }}
+            className="test" data-testid="HomeInfo" style={{ fontSize: '15px' }}
           >
-            This page is for automation testing purposes only. All credits for making the base of this page direct to: https://github.com/daniel-jebarson.
+            This page is for automation testing purposes. View it in desktop view only.
         </p>
       <h1
         className="head text-5xl font-semibold tracking-[3px] pb-2 " data-testid="HomeWelcome"
