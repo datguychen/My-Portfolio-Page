@@ -21,4 +21,4 @@ This is a repository for my personal portfolio website, showcasing my skills, pr
 
 # Why showcase only a part of my automation skills?
 
-Great question! My personal portfolio page is a much simpler project than a typical big company project, which means that it does not require a lot of different and complex testing appraches.
+Great question! My personal portfolio page is a much simpler project than a typical big company project.Consequently, the requisite testing methodologies are less diverse and intricate.
