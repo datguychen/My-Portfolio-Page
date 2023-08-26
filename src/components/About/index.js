@@ -37,9 +37,9 @@ export default function About() {
             Driven by a passion for self-development and a commitment to delivering top-notch software products.
             <br></br> 
             <br></br> 
-            I work with: Playwright Typescript, Github Actions.
+            <span className="text-yellow-600 font-bold">I work with: </span> Playwright Typescript, Github Actions.
             <br></br> 
-            I'm learning: Jenkins, ISTQB
+            <span className="text-yellow-600 font-bold">I'm learning: </span> Jenkins, ISTQB
           </p>
         </div>
 
