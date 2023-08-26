@@ -1,5 +1,5 @@
 # Purpose of this repository
-This is a repository for my personal portfolio website, showcasing my skills, projects, and certifications.
+This is a repository mainly for showcasing a part of my automation skills in Playwright Typescript.
 
 # My Portfolio Page
 
@@ -13,8 +13,6 @@ This is a repository for my personal portfolio website, showcasing my skills, pr
 - **Projects:** A collection of my past and ongoing projects, including descriptions and screenshots.
 - **Contact:** A means for visitors to reach out to me, whether it be for collaboration, inquiries, or networking opportunities.
 
+# Why showcase only a part of my automation skills?
 
-## Tutorial
-- Clone this repository
-- Run "yarn start"
-- Check my portfolio yourself 😄
+Great question! My personal portfolio page is a much simpler project than a typical big company project, which means that it does not require a lot of different and complex testing appraches.
