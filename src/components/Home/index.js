@@ -10,9 +10,13 @@ export default function Home() {
   return (
     <div className="min-h-screen grid grid-cols-1 gap-7 name content-center text-center">
         <p
-            className="test" data-testid="HomeInfo" style={{ fontSize: '15px' }}
+            className="test" data-testid="HomeInfo" style={{ fontSize: '19px' }}
           >
-            This page is for automation testing purposes. View it in desktop view only.
+            This page is for automation testing purposes. View it in desktop view only. Click <a
+            className="text-2xl text-yellow-500 pb-16 cursor-pointer hover:text-yellow-700" 
+            href="https://github.com/datguychen/My-Portfolio-Page/actions">
+              HERE
+            </a> to see the automation tests results.
         </p>
       <h1
         className="head text-5xl font-semibold tracking-[3px] pb-2 " data-testid="HomeWelcome"
