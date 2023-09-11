@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "NDA - Big Social Media Project",
+    title: "Social Media Project (NDA)",
     desc: "A Pinterest alternative for many other things.",
     tags: [
       {
@@ -12,7 +12,7 @@ export const projects = [
         color: "green-600",
       },
     ],
-    img: "https://miro.medium.com/v2/resize:fit:646/1*gMiUPuRGC36nxZHe2zthOg.png",
+    img: "https://d4y70tum9c2ak.cloudfront.net/contentImage/cp-xkfWuQLB8A-LnxHmXAXyjr697tiDTJ-H-hSl1VjA/resized.png",
     link: "https://www.investopedia.com/thmb/J8DhyqDJiZtjb3oOcbPEyA5aLxo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Term-Definitions_NDA-438a26fefa014d06b83b75b02d8403a6.jpg",
   },
   {
@@ -28,7 +28,19 @@ export const projects = [
     link: "https://apps.apple.com/us/app/daymix/id1625500165",
   },
   {
-    title: "NDA - Payment Social Platform",
+    title: "My E2E Automation Project",
+    desc: "My E2E Automation Project with Playwright. Project to display my automation skills in Playwright / TypeScipt",
+    tags: [
+      {
+        name: "Manual",
+        color: "green-600",
+      },
+    ],
+    img: "https://miro.medium.com/v2/resize:fit:646/1*gMiUPuRGC36nxZHe2zthOg.png",
+    link: "https://github.com/datguychen/My-Portfolio-Page/actions",
+  },
+  {
+    title: "Payment Social Platform (NDA)",
     desc: "A Social plaform for easier payment options",
     tags: [
       {
