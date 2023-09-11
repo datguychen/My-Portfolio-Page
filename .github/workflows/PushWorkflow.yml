@@ -13,7 +13,7 @@ jobs:
     - name: Set Workflow Name
       run: echo "::set-env name=WORKFLOW_NAME::Playwright / Sanity / Push - $(date +\%Y\%m\%d_\%H\%M\%S)"
     - name: Display Workflow Name
-      run: echo ${{ env.WORKFLOW_NAME }}
+      run: echo test
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
