@@ -49,7 +49,7 @@ export default function About() {
         >
           {/* <img
             src={LearningCode}
-            alt="Learning Code"
+            alt="Learning Codse"
             className="motion-safe:animate-zoomy"
           /> */}
           <div className="motion-safe:animate-zoomy" data-testid="AboutMeAnimation"> 
