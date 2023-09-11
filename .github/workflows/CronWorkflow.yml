@@ -2,7 +2,7 @@ name: Playwright / Sanity / Cron
 
 on:
   schedule:
-      - cron: '0 */6 * * *'
+      - cron: '0 */23 * * *'
       
 
 jobs:
@@ -41,7 +41,7 @@ jobs:
             --project-id 1 \
             --name "Cron Workflow" \
             --source "Cron-Portfolio" \
-            --results configs/testmoresults/test-results.xml \
+            --results testmoresults/test-results.xml \
       env:
         TESTMO_URL: ${{ secrets.TESTMO_URL }}
         TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}

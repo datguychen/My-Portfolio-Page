@@ -39,7 +39,7 @@ jobs:
             --project-id 1 \
             --name "Push Workflow" \
             --source "Push-Portfolio" \
-            --results configs/testmoresults/test-results.xml \
+            --results testmoresults/test-results.xml \
       env:
         TESTMO_URL: ${{ secrets.TESTMO_URL }}
         TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
