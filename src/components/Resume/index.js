@@ -4,7 +4,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 export default function Resume() {
   return (
     <div id="resume" className="min-h-screen flex-col text-center">
-      <div className="text-5xl font-bold py-8" data-aos={"slide-down"} data-testid="ResumeTitle">
+      <div className="text-5xl font-bold py-8" data-testid="ResumeTitle">
         Resume
       </div>
       <div className="grid grid-cols-2 gap-7 mt-7">

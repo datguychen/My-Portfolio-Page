@@ -90,6 +90,16 @@ export default function Slidebar() {
           <LinkedInIcon className="cursor-pointer hover:scale-105" />
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <p
+            className="test bottom-0 left-0 right-0 bg-gray-800 text-white p-4 text-center" data-testid="HomeInfo" style={{ fontSize: '19px' }}
+          >
+          This page is for automation testing purposes. 
+            <br></br> 
+            View it in desktop view only.
+        </p>
     </div>
   );
 }

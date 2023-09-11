@@ -15,30 +15,32 @@ export default function About() {
   return (
     <div
       id="about"
-      className="min-h-screen bg-white flex flex-col text-center gap-5 text-black text-lg  font-normal "
+      className="min-h-screen flex flex-col text-center gap-5 text-black text-lg  font-normal "
     >
-      <div className="head text-5xl mt-12 font-bold" data-aos={"slide-down"} data-testid="AboutMeTitle">
+      <div className="head text-5xl mt-12 font-bold text-white" data-aos={"slide-down"} data-testid="AboutMeTitle">
         About Me
       </div>
       <div className="flex flex-row  gap-6 ml-8">
         <div className="flex-col mt-14 flex flex-auto w-64 gap-6">
-          <h3 className="text-3xl font-medium" data-testid="AboutMeName" data-aos={"fade-left"}>
+          <h3 className="text-3xl font-medium text-white" data-testid="AboutMeName" data-aos={"fade-left"}>
             I'm <span className="text-yellow-600">Adam Świderski,</span> a QA
             Automation Engineer
           </h3>
           <p
-            className="pt-5 leading-7 text-slate-900 text-justify" data-testid="AboutMeDescription"
+            className="pt-5 leading-7 text-slate-900 text-justify text-white" data-testid="AboutMeDescription"
             data-aos={"fade-left"}
             style={{ fontSize: '19px' }}
           >
             I am a {getDate()}{" "}
-            years old QA Automation Tester with three years of experience in both automation and manual software testing.
+            years old QA Automation Tester with three years of experience manual software testing and 1+ year in automation testing.
             <br></br> 
             Driven by a passion for self-development and a commitment to delivering top-notch software products.
             <br></br> 
             <br></br> 
+            <br></br>
+            <br></br>
             <span className="text-yellow-600 font-bold">I work with: </span> Playwright Typescript, Github Actions, Postman.
-            <br></br> 
+            <br></br>
             <span className="text-yellow-600 font-bold">I'm learning: </span> Jenkins, ISTQB, Docker, Ruby.
           </p>
         </div>
