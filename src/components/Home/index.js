@@ -8,15 +8,11 @@ export default function Home() {
     return splitter.splitGraphemes(string);
   };
   return (
-    <div className="min-h-screen grid grid-cols-1 gap-7 name content-center text-center">
+    <div className="min-h-screen grid grid-cols-1 gap-8 name content-center text-center ">
         <p
             className="test" data-testid="HomeInfo" style={{ fontSize: '19px' }}
           >
-            This page is for automation testing purposes. View it in desktop view only. Click <a
-            className="text-2xl text-yellow-500 pb-16 cursor-pointer hover:text-yellow-700" 
-            href="https://github.com/datguychen/My-Portfolio-Page/actions">
-              HERE
-            </a> to see the automation tests results.
+            This page is for automation testing purposes. View it in desktop view only. 
         </p>
       <h1
         className="head text-5xl font-semibold tracking-[3px] pb-2 " data-testid="HomeWelcome"
@@ -46,6 +42,7 @@ export default function Home() {
           }}
         />
       </div>
+      <div className="grid grid-cols-2">
       <button
         className="py-2 mx-auto px-7 bg-transparent border-2 w-fit border-blue-500 rounded-sm  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800" data-testid="HomeContactBtn"
         data-aos="zoom-out-up"
@@ -53,6 +50,14 @@ export default function Home() {
       >
         <a href="#contact">Contact Me</a>
       </button>
+      <button
+        className="py-2 mx-auto px-7 bg-transparent border-2 w-fit border-blue-500 rounded-sm  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800" data-testid="HomeContactBtn"
+        data-aos="zoom-out-up"
+        data-aos-delay="1400"
+      >
+        <a href="https://datguychen.testmo.net/automation/runs/1">Automation Tests Raports</a>
+      </button>
+      </div>
       <div
         className=" cursor-pointer w-fit left-[62%] absolute bottom-16"
         data-aos-offset="20"
@@ -73,5 +78,6 @@ export default function Home() {
         </a>
       </div>
     </div>
+    
   );
 }
