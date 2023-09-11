@@ -31,10 +31,12 @@ export default function About() {
             data-aos={"fade-left"}
             style={{ fontSize: '19px' }}
           >
-            I am a {getDate()}{" "}
+            <span className="text-yellow-600">1.</span> I am a {getDate()}{" "}
             years old QA Automation Tester with three years of experience manual software testing and 1+ year in automation testing.
             <br></br> 
-            Driven by a passion for self-development and a commitment to delivering top-notch software products.
+            <span className="text-yellow-600">2.</span> I possess a genuine interest in the realm of CI/CD pipelines and am eager to deepen my knowledge in this area.
+            <br></br> 
+            <span className="text-yellow-600">3.</span> Driven by a passion for self-development and a commitment to delivering top-notch software products.
             <br></br> 
             <br></br> 
             <br></br>
