@@ -46,7 +46,7 @@ export default function Home() {
         <a href="#contact">Contact Me</a>
       </button>
       <button
-        className="py-2 mx-auto px-7 bg-transparent border-2 w-fit border-blue-500 rounded-sm  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800" data-testid="HomeContactBtn"
+        className="py-2 mx-auto px-7 bg-transparent border-2 w-fit border-blue-500 rounded-sm  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800" data-testid="HomeAutomationRaports"
         data-aos="zoom-out-up"
         data-aos-delay="1400"
       >
