@@ -35,8 +35,8 @@ jobs:
           npx testmo automation:run:submit \
             --instance "$TESTMO_URL" \
             --project-id 1 \
-            --name "Cron Workflow" \
-            --source "DEV-Github" \
+            --name "Push Workflow" \
+            --source "Push-Portfolio" \
             --results configs/testmoresults/test-results.xml \
       env:
         TESTMO_URL: ${{ secrets.TESTMO_URL }}

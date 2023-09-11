@@ -19,21 +19,10 @@ jobs:
         cache: 'npm'
     
     - name: Install dependencies
-      env:
-        DEFAULT_BRANCH: main
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       run: npm ci
-    - name: Install Testmo CLI
-      run: npm install --no-save @testmo/testmo-cli
     - name: Install Playwright
-      env:
-        DEFAULT_BRANCH: main
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       run: npx playwright install --with-deps chromium
     - name: Run Playwright - All tests
-      env:
-        DEFAULT_BRANCH: main
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       run: npx playwright test
     - name: Upload test results
       if: always()
@@ -49,7 +38,7 @@ jobs:
             --instance "$TESTMO_URL" \
             --project-id 1 \
             --name "Cron Workflow" \
-            --source "DEV-Github" \
+            --source "Cron-Portfolio" \
             --results configs/testmoresults/test-results.xml \
       env:
         TESTMO_URL: ${{ secrets.TESTMO_URL }}

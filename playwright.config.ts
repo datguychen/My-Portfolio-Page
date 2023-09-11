@@ -16,13 +16,10 @@ export default defineConfig({
   retries: 1,
   workers: 5,
   reporter: [
-  //   ['junit', { 
-  //   outputFile: 'testmoresults/test-results.xml',
-  //   embedAnnotationsAsProperties: true,
-
-  //   // Not used by Testmo
-  //   // embedAttachmentsAsProperty: undefined 
-  // }],
+    ['junit', { 
+    outputFile: 'testmoresults/test-results.xml',
+    embedAnnotationsAsProperties: true,
+  }],
     ['dot'],
     ['html'],
     ['line'],
