@@ -23,6 +23,8 @@ jobs:
         DEFAULT_BRANCH: main
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       run: npm ci
+    - name: Install Testmo CLI
+      run: npm install --no-save @testmo/testmo-cli
     - name: Install Playwright
       env:
         DEFAULT_BRANCH: main
@@ -40,3 +42,16 @@ jobs:
         name: playwright-report
         path: playwright-report
         retention-days: 5
+    - name: Push Testmo Report
+      if: always()
+      run: |
+          npx testmo automation:run:submit \
+            --instance "$TESTMO_URL" \
+            --project-id 1 \
+            --name "Cron Workflow" \
+            --source "DEV-Github" \
+            --results configs/testmoresults/test-results.xml \
+      env:
+        TESTMO_URL: ${{ secrets.TESTMO_URL }}
+        TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
+      
