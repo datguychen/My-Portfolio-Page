@@ -6,4 +6,4 @@ zzzzkomendy.txt
 /playwright-report/
 /playwright/.cache/
 build
-testmoresults
+testmoresults/test-results.xml
