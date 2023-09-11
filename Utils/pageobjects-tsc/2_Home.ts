@@ -16,7 +16,7 @@ export class Home{
         this.InfoMessage = page.getByTestId('HomeInfo');
         this.WelcomeTitle = page.getByTestId('HomeWelcome');
         this.TypeWriterText = page.getByTestId('typewriter-wrapper');
-        this.ContactMeBtn = page.getByTestId("HomeContactBtn");
+        this.ContactMeBtn = page.getByTestId("HomeContactBtn").nth(0);
         this.ScrollDownArrow = page.getByTestId("HomeScrollArrow");
 
     }
