@@ -1,6 +1,7 @@
 import "../App.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import GitLabIcon from '@mui/icons-material/Code';
 import { useState } from "react";
 
 export default function Slidebar() {
@@ -75,8 +76,12 @@ export default function Slidebar() {
           onClick={() =>
             window.open("https://github.com/datguychen", "_blank")
           }
+          className="group relative"
         >
           <GitHubIcon className="cursor-pointer hover:scale-105" />
+          <span className="opacity-0 text-white rounded py-1 absolute top-7 left-1/2 transform -translate-x-1/2 transition-opacity group-hover:opacity-100 whitespace-nowrap">
+            My GitHub Profile
+          </span>
         </div>
         <div
           onClick={() =>
@@ -85,16 +90,34 @@ export default function Slidebar() {
               "_blank"
             )
           }
+          className="group relative"
         >
           {" "}
           <LinkedInIcon className="cursor-pointer hover:scale-105" />
+          <span className="opacity-0 text-white rounded py-1 absolute top-7 left-1/2 transform -translate-x-1/2 transition-opacity group-hover:opacity-100 whitespace-nowrap">
+            My LinkedIn Profile
+          </span>
+        </div>
+        <div
+          onClick={() =>
+            window.open(
+              "https://gitlab.com/datguychen",
+              "_blank"
+            )
+          }
+          className="group relative"
+          >
+          <GitLabIcon className="cursor-pointer hover:scale-105" />
+          <span className="opacity-0 text-white rounded py-1 absolute top-7 left-1/2 transform -translate-x-1/2 transition-opacity group-hover:opacity-100 whitespace-nowrap">
+            My GitLab Profile
+          </span>
         </div>
       </div>
       <br></br>
       <br></br>
       <br></br>
       <p
-            className="test bottom-0 left-0 right-0 bg-gray-800 text-white p-4 text-center" data-testid="HomeInfo" style={{ fontSize: '19px' }}
+        className="test bottom-0 left-0 right-0 bg-gray-800 text-white p-4 text-center" data-testid="HomeInfo" style={{ fontSize: '19px' }}
           >
           This page is for automation testing purposes. 
             <br></br> 

@@ -50,7 +50,7 @@ export default function Home() {
         data-aos="zoom-out-up"
         data-aos-delay="1400"
       >
-        <a href="https://datguychen.testmo.net/automation/runs/1">Automation Tests Raports</a>
+        <a href="https://github.com/datguychen/My-Portfolio-Page/actions">Automation Tests Reports - WIP</a>
       </button>
       </div>
       <div

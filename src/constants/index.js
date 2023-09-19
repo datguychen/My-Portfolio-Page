@@ -32,9 +32,13 @@ export const projects = [
     desc: "My E2E Automation Project with Playwright. Project to display my automation skills in Playwright / TypeScipt",
     tags: [
       {
+        name: "Automation / Playwright",
+        color: "red-600",
+      },
+      {
         name: "Manual",
         color: "green-600",
-      },
+      }
     ],
     img: "https://miro.medium.com/v2/resize:fit:646/1*gMiUPuRGC36nxZHe2zthOg.png",
     link: "https://github.com/datguychen/My-Portfolio-Page/actions",

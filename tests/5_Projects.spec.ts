@@ -32,7 +32,7 @@ test('Projects_General_Sections_Visibility @core', async ({browser})=>
     await test.step("Check if the title and projects tiles are visible", async () => {
         await expect(projects.Title).toHaveText("Projects");
         const TilesCount = await projects.ProjectTile.count();
-        await expect(TilesCount).toEqual(4);
+        await expect(TilesCount).toEqual(5);
     });
 
     await page.close();
@@ -60,7 +60,7 @@ test('Projects_Check_Each_Project @core', async ({browser})=>
     });
 
     await test.step("Check the first tile info", async () => {
-        await expect(projects.ProjectName.nth(0)).toHaveText("NDA - Big Social Media Project");
+        await expect(projects.ProjectName.nth(0)).toHaveText("Social Media Project (NDA)");
         await expect(projects.ProjectDescription.nth(0)).toHaveText("A Pinterest alternative for many other things.");
         await expect(projects.ProjectTags.nth(0).nth(0)).toHaveText("Automation / Playwright");
         await expect(projects.ProjectTags.nth(1).nth(0)).toHaveText("Manual");
@@ -93,7 +93,7 @@ test('Projects_Check_Each_Project @core', async ({browser})=>
     });
 
     await test.step("Check the third tile info", async () => {
-        await expect(projects.ProjectName.nth(2)).toHaveText("NDA - Payment Social Platform");
+        await expect(projects.ProjectName.nth(2)).toHaveText("Payment Social Platform (NDA)");
         await expect(projects.ProjectDescription.nth(2)).toContainText("A Social plaform for easier payment options");
         await expect(projects.ProjectTags.nth(2)).toHaveText("Manual");
         await expect(projects.ProjectTileImg.nth(2)).toHaveAttribute("src","https://erepublic.brightspotcdn.com/dims4/default/343c604/2147483647/strip/true/crop/770x374+0+69/resize/1440x700!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.amazonaws.com%2Faa%2F6b%2F1a5404996431a2071cf7a016cadf%2Fshutterstock-cash-payments.jpg");
