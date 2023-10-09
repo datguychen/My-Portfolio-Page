@@ -33,16 +33,4 @@ jobs:
         name: playwright-report
         path: playwright-report
         retention-days: 5
-    - name: Push Testmo Report
-      if: always()
-      run: |
-          npx testmo automation:run:submit \
-            --instance "$TESTMO_URL" \
-            --project-id 1 \
-            --name "Cron Workflow" \
-            --source "Cron-Portfolio" \
-            --results testmoresults/test-results.xml \
-      env:
-        TESTMO_URL: ${{ secrets.TESTMO_URL }}
-        TESTMO_TOKEN: ${{ secrets.TESTMO_TOKEN }}
       
