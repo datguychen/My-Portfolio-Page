@@ -1,4 +1,4 @@
-name: Playwright / Sanity / Cron
+name: E2E / Sanity / Cron
 
 on:
   schedule:
