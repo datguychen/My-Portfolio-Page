@@ -29,23 +29,21 @@ test('Resume_General_Sections_Visibility @core', async ({browser})=>
         await sidebar.ResumeTab.click();
     });
 
-    await test.step("Check if the titles and download CV are visible", async () => {
-        await expect(resume.CoursesTitle).toHaveText("Courses");
-        await expect(resume.MySkillsTitle).toHaveText("My Skills");
-        await expect(resume.ResumeTitle).toHaveText("Resume");
-        await expect(resume.SkillsDownloadCV).toHaveText("Download CV");
+    await test.step("Check if the title and download CV are visible", async () => {
+        await expect(resume.ResumeTitle).toHaveText("Resume & Courses");
+        await expect(resume.ResumeCVBtn).toBeVisible();
     });
 
     await test.step("Check download CV button on click", async () => {
         const downloadPromise = page.waitForEvent('download');
-        await resume.SkillsDownloadCV.click();
+        await resume.ResumeCVBtn.click();
         await downloadPromise;
     });
 
     await page.close();
 });
 
-test('Resume_Courses_Check_each_course @core', async ({browser})=>
+test('Resume_Courses_Check_Each_Course_Part1 @core', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});
@@ -66,42 +64,51 @@ test('Resume_Courses_Check_each_course @core', async ({browser})=>
         await sidebar.ResumeTab.click();
     });
 
-    await test.step("Check playwright automation course", async () => {
-        await expect(resume.FirstCourseCompleted).toHaveText("Completed on September, 2022");
-        await expect(resume.FirstCourseDescription).toContainText("Learned how to use JS and TS");
-        await expect(resume.FirstCourseTitle).toHaveText("Playwright automation");
+    await test.step("Check 1 Course - Playwright automation", async () => {
+        await expect(resume.CoursesTimeStamp.nth(0)).toHaveText("Completed on September, 2022");
+        await expect(resume.CoursesDescription.nth(0)).toContainText("Learned how to use JS and TS");
+        await expect(resume.CoursesTitles.nth(0)).toHaveText("Playwright automation");
     });
 
-    await test.step("Check javascript and typescript course", async () => {
-        await expect(resume.SecondCourseCompleted).toHaveText("Completed on August, 2022");
-        await expect(resume.SecondCourseDescription).toContainText("Learned both programming languages");
-        await expect(resume.SecondCourseTitle).toHaveText("JavaScript and TypeScript");
-        await expect(resume.SecondCourseDownload).toHaveText("Download Certificate");
+    await test.step("Check 2 Course - JavaScript and TypeScript", async () => {
+        await expect(resume.CoursesTimeStamp.nth(1)).toHaveText("Completed on August, 2022");
+        await expect(resume.CoursesDescription.nth(1)).toContainText("Learned both programming languages");
+        await expect(resume.CoursesTitles.nth(1)).toHaveText("JavaScript and TypeScript");
+        await expect(resume.CoursesBtns.nth(0)).toHaveText("Download Certificate");
     });
 
     await test.step("Check the Download Certificate btn", async () => {
         const [CertificatePage] = await Promise.all([
             webContext.waitForEvent('page'),
-            resume.SecondCourseDownload.click()
+            resume.CoursesBtns.nth(0).click()
         ]);
         await expect(CertificatePage).toHaveURL("https://www.sololearn.com/Certificate/CT-HATAHI2L/png");
         await CertificatePage.close();
     });
 
-    await test.step("Check next on radar course", async () => {
-        await expect(resume.ThirdCourseCompleted).toHaveText("To be completed");
-        await expect(resume.ThirdCourseDescription).toContainText("This milestone is set as my next goal");
-        await expect(resume.ThirdCourseTitle).toHaveText("Next on my radar: ISTQB");
+    await test.step("Check 3 Course - Postman Backend Automation", async () => {
+        await expect(resume.CoursesTimeStamp.nth(2)).toHaveText("Completed on June, 2023");
+        await expect(resume.CoursesDescription.nth(2)).toContainText("Learned how to automate backend testing with Postman.");
+        await expect(resume.CoursesTitles.nth(2)).toHaveText("Postman Backend Automation");
+    });
+
+    await test.step("Check the Check my code btn", async () => {
+        const [PostmanCodePage] = await Promise.all([
+            webContext.waitForEvent('page'),
+            resume.CoursesBtns.nth(1).click()
+        ]);
+        await expect(PostmanCodePage).toHaveURL("https://www.postman.com/interstellar-eclipse-418940/workspace/api-automation-course-workspace/overview");
+        await PostmanCodePage.close();
     });
 
     await page.close();
 });
 
-test('Resume_MySkills @core', async ({browser})=>
+test('Resume_Courses_Check_Each_Course_Part2 @core', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});
-    test.info().annotations.push({type: "Description", description: "This test verifies if the skills sections has loaded properly"});
+    test.info().annotations.push({type: "Description", description: "This test verifies if all courses has loaded properly"});
 
     const webContext = await browser.newContext();
     const page = await webContext.newPage();
@@ -118,28 +125,28 @@ test('Resume_MySkills @core', async ({browser})=>
         await sidebar.ResumeTab.click();
     });
 
-    await test.step("Check the first skill and its percentage", async () => {
-        await expect(resume.SkillsNameAndPercentage.nth(0)).toHaveText("JavaScript65%");
+    await test.step("Check 4 Course - SQL", async () => {
+        await expect(resume.CoursesTimeStamp.nth(3)).toHaveText("Completed on July, 2023");
+        await expect(resume.CoursesDescription.nth(3)).toContainText("I've learned SQL for querying databases");
+        await expect(resume.CoursesTitles.nth(3)).toHaveText("SQL");
     });
 
-    await test.step("Check the second skill and its percentage", async () => {
-        await expect(resume.SkillsNameAndPercentage.nth(1)).toHaveText("TypeScript60%");
+    await test.step("Check 5 Course - BDD - Behavioral Driven Development", async () => {
+        await expect(resume.CoursesTimeStamp.nth(4)).toHaveText("Completed on September, 2022");
+        await expect(resume.CoursesDescription.nth(4)).toContainText("I learned the basics, workflow, and implementation of BDD");
+        await expect(resume.CoursesTitles.nth(4)).toHaveText("BDD - Behavioral Driven Development");
     });
 
-    await test.step("Check the third skill and its percentage", async () => {
-        await expect(resume.SkillsNameAndPercentage.nth(2)).toHaveText("Playwright - Autmation testing80%");
+    await test.step("Check 6 Course - C# programming language", async () => {
+        await expect(resume.CoursesTimeStamp.nth(5)).toHaveText("Completed on September, 2023");
+        await expect(resume.CoursesDescription.nth(5)).toContainText("I learned C# basics");
+        await expect(resume.CoursesTitles.nth(5)).toHaveText("C# programming language");
     });
 
-    await test.step("Check the fourth skill and its percentage", async () => {
-        await expect(resume.SkillsNameAndPercentage.nth(3)).toHaveText("Creating documentation90%");
-    });
-
-    await test.step("Check the fifth skill and its percentage", async () => {
-        await expect(resume.SkillsNameAndPercentage.nth(4)).toHaveText("Manual frontend testing90%");
-    });
-
-    await test.step("Check the sixth skill and its percentage", async () => {
-        await expect(resume.SkillsNameAndPercentage.nth(5)).toHaveText("Manual backend testing65%");
+    await test.step("Check 7 Course - ISTQB Foundation Level", async () => {
+        await expect(resume.CoursesTimeStamp.nth(6)).toHaveText("To be completed on 13.10.2023");
+        await expect(resume.CoursesDescription.nth(6)).toContainText("This milestone is set as my next goal");
+        await expect(resume.CoursesTitles.nth(6)).toHaveText("ISTQB Foundation Level");
     });
 
     await page.close();

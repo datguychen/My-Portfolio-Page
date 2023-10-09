@@ -2,7 +2,7 @@ name: Playwright / Sanity / Cron
 
 on:
   schedule:
-      - cron: '0 */23 * * *'
+      - cron: '0 6 * * *'
       
 
 jobs:

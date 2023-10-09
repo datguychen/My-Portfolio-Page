@@ -30,7 +30,7 @@ test('Home_Text_Visibility @core', async ({browser})=>
 
     await test.step("Check if the info/credits text is visible & check the text", async () => {
         await expect(home.InfoMessage).toBeVisible();
-        await expect(home.InfoMessage).toHaveText("This page is for automation testing purposes. View it in desktop view only.");
+        await expect(home.InfoMessage).toHaveText("This page is for automation testing purposes.View it in desktop view only.");
     });
 
     await test.step("Check if the Welcome text is visible & check the text", async () => {

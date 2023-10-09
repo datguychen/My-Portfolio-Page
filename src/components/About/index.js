@@ -44,6 +44,19 @@ export default function About() {
             <span className="text-yellow-600 font-bold">I work with: </span> Playwright Typescript, Github Actions, Postman.
             <br></br>
             <span className="text-yellow-600 font-bold">I'm learning: </span> Jenkins, ISTQB, Docker, Ruby.
+            <br></br>
+            <br></br>
+            <span className="text-yellow-600 font-bold">My skills: </span> <br></br>
+            ◻️ ✅ Playwright (automation) <br></br>
+            ◻️ ✅ CI/CD - GitHub Actions <br></br>
+            ◻️ ✅ GIT <br></br>
+            ◻️ ✅ GraphQL - Altair <br></br>
+            ◻️ ✅ REST API - Postman <br></br>
+            ◻️ ✅ TypeScript <br></br>
+            ◻️ ✅ Jira / Asana <br></br>
+            ◻️ ✅ Agile / Scrum <br></br>
+            ◻️ ✅ SQL - PostgreSQL / pgAdmin <br></br>
+            ◻️ ✅ ISTQB Methodologies <br></br>
           </p>
         </div>
 
