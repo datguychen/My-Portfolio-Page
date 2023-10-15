@@ -7,3 +7,4 @@ zzzzkomendy.txt
 /playwright/.cache/
 build
 testmoresults/test-results.xml
+.vercel
