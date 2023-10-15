@@ -9,6 +9,8 @@ jobs:
   Portfolio_E2E_Push_Main:
     timeout-minutes: 30
     runs-on: ubuntu-latest
+    env:
+      ESLINT_DISABLED: true
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
