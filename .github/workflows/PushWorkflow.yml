@@ -21,7 +21,7 @@ jobs:
     - name: Install Playwright
       run: npx playwright install --with-deps chromium
     - name: Install Vercel CLI
-      run: pnpm i -g vercel
+      run: npm install -g vercel
     - name: Run vercel tests
       run: npx playwright test --grep "@vercel" --project="Chrome"
     - name: Upload test results
