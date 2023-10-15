@@ -37,10 +37,14 @@
     "pushTestmo": "testmo automation:run:submit --instance https://datguychen.testmo.net/ --project-id 1 --name \"All Regression Tests - Portfolio\" --source \"Test\" --results configs/testmoresults/test-results.xml"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true,
+      "jest": true,
+      "CI": false
+    },
+    "extends": ["react-app","react-app/jest"]
   },
   "browserslist": {
     "production": [
