@@ -36,12 +36,6 @@
     "deploy": "gh-pages -d build",
     "pushTestmo": "testmo automation:run:submit --instance https://datguychen.testmo.net/ --project-id 1 --name \"All Regression Tests - Portfolio\" --source \"Test\" --results configs/testmoresults/test-results.xml"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
