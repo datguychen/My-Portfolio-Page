@@ -42,7 +42,7 @@ jobs:
     - name: Push to Vercel
       if: success()
       run: |
-        npx vercel --prod --confirm
+        npx vercel --prod --yes
       env:
         VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
     
