@@ -40,7 +40,6 @@ export default function About() {
             <br></br> 
             <br></br> 
             <br></br>
-            <br></br>
             <span className="text-yellow-600 font-bold">I work with: </span> Playwright Typescript, Github Actions, Postman.
             <br></br>
             <span className="text-yellow-600 font-bold">I'm learning: </span> Jenkins, ISTQB, Docker, Ruby.
@@ -57,6 +56,7 @@ export default function About() {
             ◻️ ✅ Agile / Scrum <br></br>
             ◻️ ✅ SQL - PostgreSQL / pgAdmin <br></br>
             ◻️ ✅ ISTQB Methodologies <br></br>
+            ◻️ ✅ Performance Testing (K6) <br></br>
           </p>
         </div>
 

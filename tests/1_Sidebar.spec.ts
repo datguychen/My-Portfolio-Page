@@ -206,6 +206,15 @@ test('Sidebar_Github_LinkedIn_Buttons @core @vercel', async ({browser})=>
         await LinkedinPage.close();
     });
 
+    await test.step("Click Gitlab button and check if the proper page opened", async () => {
+        const [GitlabPage] = await Promise.all([
+            webContext.waitForEvent('page'),
+            sidebar.GitlabBtn.click(),
+        ]);
+        await expect(GitlabPage.url()).toContain("https://gitlab.com/datguychen");
+        await GitlabPage.close();
+    });
+
     await page.close();
 });
 

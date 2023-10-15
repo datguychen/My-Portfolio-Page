@@ -12,6 +12,7 @@ export class Sidebar {
     readonly GithubBtn: Locator;
     readonly LinkedinBtn: Locator;
     readonly Sidebar: Locator;
+    readonly GitlabBtn: Locator;
 
     constructor(page: Page) {
 
@@ -26,5 +27,6 @@ export class Sidebar {
         this.ContactTab = page.getByTestId('ContactTab');
         this.GithubBtn = this.Sidebar.locator('[data-testid$="GitHubIcon"]');
         this.LinkedinBtn = this.Sidebar.locator('[data-testid$="LinkedInIcon"]');
+        this.GitlabBtn = this.Sidebar.locator('[data-testid$="CodeIcon"]');
     }
 }
