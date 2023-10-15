@@ -8,7 +8,7 @@ function delay(time: number) {
     });
 }
 
-test('Resume_General_Sections_Visibility @core', async ({browser})=>
+test('Resume_General_Sections_Visibility @core @vercel', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});

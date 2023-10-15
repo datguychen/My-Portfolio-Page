@@ -8,7 +8,7 @@ function delay(time: number) {
     });
 }
 
-test('Contact_General_Sections_Visibility @core', async ({browser})=>
+test('Contact_General_Sections_Visibility @core @vercel', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});
@@ -39,7 +39,7 @@ test('Contact_General_Sections_Visibility @core', async ({browser})=>
     await page.close();
 });
 
-test('Contact_GitHub_LinkedIn @core', async ({browser})=>
+test('Contact_GitHub_LinkedIn @core @vercel', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});

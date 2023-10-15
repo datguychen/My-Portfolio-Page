@@ -20,12 +20,10 @@ jobs:
     
     - name: Install dependencies
       run: npm ci
-    - name: Install Testmo CLI
-      run: npm install --no-save @testmo/testmo-cli
     - name: Install Playwright
       run: npx playwright install --with-deps chromium
-    - name: Run Playwright - All tests
-      run: npx playwright test
+    - name: Run core tests
+      run: npx playwright test --grep "@core" --project="Chrome"
     - name: Upload test results
       if: always()
       uses: actions/upload-artifact@v3

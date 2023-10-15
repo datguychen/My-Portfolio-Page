@@ -8,7 +8,7 @@ function delay(time: number) {
     });
 }
 
-test('Sidebar_ProfilePicture @core', async ({browser})=>
+test('Sidebar_ProfilePicture @core @vercel', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});
@@ -37,7 +37,7 @@ test('Sidebar_ProfilePicture @core', async ({browser})=>
     await page.close();
 });
 
-test('Sidebar_FullName @core', async ({browser})=>
+test('Sidebar_FullName @core @vercel', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});
@@ -66,7 +66,7 @@ test('Sidebar_FullName @core', async ({browser})=>
     await page.close();
 });
 
-test('Sidebar_Tabs_HoverStates @core', async ({browser})=>
+test('Sidebar_Tabs_HoverStates @core @vercel', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});
@@ -120,7 +120,7 @@ test('Sidebar_Tabs_HoverStates @core', async ({browser})=>
     await page.close();
 });
 
-test('Sidebar_Tabs_Click_Check @core', async ({browser})=>
+test('Sidebar_Tabs_Click_Check @core @vercel', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});
@@ -168,7 +168,7 @@ test('Sidebar_Tabs_Click_Check @core', async ({browser})=>
     await page.close();
 });
 
-test('Sidebar_Github_LinkedIn_Buttons @core', async ({browser})=>
+test('Sidebar_Github_LinkedIn_Buttons @core @vercel', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});

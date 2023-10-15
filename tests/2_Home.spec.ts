@@ -8,7 +8,7 @@ function delay(time: number) {
     });
 }
 
-test('Home_Text_Visibility @core', async ({browser})=>
+test('Home_Text_Visibility @core @vercel', async ({browser})=>
 
 {
     test.info().annotations.push({type: "severity", description: "Critical"});
