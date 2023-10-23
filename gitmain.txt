@@ -1,1 +1,0 @@
-this text file is a main text file for git rebase
