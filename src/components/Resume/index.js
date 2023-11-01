@@ -231,11 +231,31 @@ export default function Resume() {
               Foundation Level
             </h3>
             <time class="block mb-2 text-sm font-normal leading-none text-gray-500">
-              To be completed on 13.10.2023
+            Completed on October, 2023
             </time>
             <p class="text-base font-normal text-gray-400">
-              This milestone is set as my next goal to become an outstanding QA tester.
+            Studying for this exam gave me a better perception about the vital role that theoretical knowledge plays in Quality Assurance.
             </p>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={require("../../assets/files/MyISTQBFL.pdf")}
+              class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none focus:text-blue-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
+            >
+              <svg
+                class="w-4 h-4 mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>{" "}
+              Download Certificate
+            </a>
           </li>
         </ol>
       </div>

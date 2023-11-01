@@ -40,9 +40,9 @@ export default function About() {
             <br></br> 
             <br></br> 
             <br></br>
-            <span className="text-yellow-600 font-bold">I work with: </span> Playwright Typescript, Github Actions, Postman.
+            <span className="text-yellow-600 font-bold">I work with: </span> Playwright-Typescript, Github Actions, Postman.
             <br></br>
-            <span className="text-yellow-600 font-bold">I'm learning: </span> Jenkins, ISTQB, Docker, Ruby.
+            <span className="text-yellow-600 font-bold">I'm learning: </span> Jenkins, Docker, JMeter.
             <br></br>
             <br></br>
             <span className="text-yellow-600 font-bold">My skills: </span> <br></br>
