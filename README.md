@@ -23,4 +23,4 @@ Automation tests can be found in the "tests" folder.
 
 # Why showcase only a part of my automation skills?
 
-Great question! My personal portfolio page is a much simpler project than a typical big company project.Consequently, the requisite testing methodologies are less diverse and intricate.
+Great question! My personal portfolio page is a much simpler project than a typical big company project. Consequently, the requisite testing methodologies are less diverse and intricate.
