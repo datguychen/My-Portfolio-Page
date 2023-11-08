@@ -1,9 +1,11 @@
 # Purpose of this repository
+
 This is a repository mainly for showcasing a part of my automation skills in Playwright Typescript.
 
 # My Portfolio Page
 
 This is a repository for my personal portfolio website, showcasing my skills, projects, and certifications. The website is designed to provide an overview of my work and serve as a professional platform to showcase my abilities and experiences.
+Automation tests can be found in the "tests" folder.
 
 ## Portfolio Features
 
@@ -21,4 +23,4 @@ This is a repository for my personal portfolio website, showcasing my skills, pr
 
 # Why showcase only a part of my automation skills?
 
-Great question! My personal portfolio page is a much simpler project than a typical big company project.Consequently, the requisite testing methodologies are less diverse and intricate.
+Great question! My personal portfolio page is a much simpler project than a typical big company project. Consequently, the requisite testing methodologies are less diverse and intricate.
