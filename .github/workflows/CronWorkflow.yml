@@ -33,7 +33,7 @@ jobs:
 
 
     - name: Run core tests
-      run: npx playwright test --grep "@core" --project="Chrome_With_Media"
+      run: npx playwright test --grep "@vercel" --project="Chrome_With_Media"
 
     - name: Upload test results
       if: always()

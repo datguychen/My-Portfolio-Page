@@ -1,9 +1,8 @@
 # name: E2E / Sanity / Push / Update Cache
 
 # on:
-#   push:
-#     branches:
-#       - main
+#     schedule:
+#         - cron: '0 6 */7 * *'
       
 
 # jobs:
