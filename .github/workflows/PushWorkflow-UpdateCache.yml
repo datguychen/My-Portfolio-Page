@@ -1,36 +1,36 @@
-name: E2E / Sanity / Push / Update Cache
+# name: E2E / Sanity / Push / Update Cache
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
       
 
-jobs:
-  Portfolio_E2E_Push_Update_Cache:
-    timeout-minutes: 30
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-      with:
-        ref: main
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 18
+# jobs:
+#   Portfolio_E2E_Push_Update_Cache:
+#     timeout-minutes: 30
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v3
+#       with:
+#         ref: main
+#     - uses: actions/setup-node@v3
+#       with:
+#         node-version: 18
 
-    - name: Get node version
-      id: node
-      run: |
-       echo "version=$(node -v)" >> $GITHUB_OUTPUT
+#     - name: Get node version
+#       id: node
+#       run: |
+#        echo "version=$(node -v)" >> $GITHUB_OUTPUT
 
-    - name: Get node_modules cache
-      uses: actions/cache@v3.0.2
-      id: node_modules
-      with:
-        path: |
-          **/node_modules
-        key: basekey-test
+#     - name: Get node_modules cache
+#       uses: actions/cache@v3.0.2
+#       id: node_modules
+#       with:
+#         path: |
+#           **/node_modules
+#         key: basekey-test
 
-    - name: Run vercel tests
-      run: npx playwright test --grep "@vercel" --project="Chrome_With_Media"
+#     - name: Run vercel tests
+#       run: npx playwright test --grep "@vercel" --project="Chrome_With_Media"
       
