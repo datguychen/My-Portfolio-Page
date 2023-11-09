@@ -1,4 +1,4 @@
-name: E2E / Sanity / Cron
+name: E2E / Sanity / Cron / Update Cache
 
 on:
   schedule:
