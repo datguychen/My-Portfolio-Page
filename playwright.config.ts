@@ -46,5 +46,23 @@ export default defineConfig({
         channel: 'chrome',
       },
     },
+    {
+      name: 'Safari',
+      testDir: './tests',
+      use: {
+        launchOptions: { slowMo: 500 },
+        actionTimeout: 0,
+        browserName: 'webkit',
+        headless: true,
+        screenshot: 'only-on-failure',
+        trace: 'retain-on-failure',
+        ...devices['Desktop Safari'],
+        viewport: { width: 1920, height: 955 },
+      },
+    },
+    {
+      name: 'Mobile',
+      use: { ...devices['iPhone 12'] },
+    },
   ],
 });

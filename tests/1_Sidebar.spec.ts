@@ -34,6 +34,8 @@ test('Sidebar_ProfilePicture @core @vercel', async ({browser})=>
         await expect(PictureSource).toContain("MyImage");
     });
 
+    await page.pause();
+
     await page.close();
 });
 

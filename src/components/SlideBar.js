@@ -7,13 +7,14 @@ import { useState } from "react";
 export default function Slidebar() {
   const [select, setSelect] = useState(0);
   return (
-    <div className="flex-none  bg-purple-900 h-screen min-w-[25%] fixed " data-testid="Sidebar">
+    <div className="flex-none bg-purple-900 h-screen min-w-[25%] max-w-[30%] lg:min-w-0 fixed" data-testid="Sidebar">
       <div className="nav flex  text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5 overflow-hidden">
         <div data-aos="slide-down">
           <img
-            src={require("../assets/images/MyImage.webp")}
+            src={require("../assets/images/MyImage.jpg")}
             alt="Adam Swiderski"
-            className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px] max-h-[210px]" data-testid="SidebarPicture"
+            className="rounded-full border-solid cursor-pointer border-[8px] border-stone-600 mx-auto sm:max-w-[40px] lg:max-w-[190px] max-h-[210px] object-cover"
+            data-testid="SidebarPicture"
           />
           <h3 className="text-white name py-5" style={{ fontSize: '29px' }} data-testid="SidebarMyName">
             Adam Świderski
