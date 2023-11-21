@@ -13,7 +13,7 @@ export default function Slidebar() {
           <img
             src={require("../assets/images/MyImage.webp")}
             alt="Adam Swiderski"
-            className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px]" data-testid="SidebarPicture"
+            className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px] max-h-[210px]" data-testid="SidebarPicture"
           />
           <h3 className="text-white name py-5" style={{ fontSize: '29px' }} data-testid="SidebarMyName">
             Adam Świderski
